@@ -1,5 +1,5 @@
-let inputDirection = { x:0, y:0}
-let lastInputDirection = {x:0, y:0}
+let inputDirection = { x:0, y:0 } 
+let lastInputDirection = { x:0, y:0 }
 
 window.addEventListener('keydown', e => {
     switch (e.key) {
@@ -15,7 +15,7 @@ window.addEventListener('keydown', e => {
             if (lastInputDirection.x !==0) break
             inputDirection = {x:-1, y:0}
             break
-        case 'ArrowUp' :
+        case 'ArrowRight' :
             if (lastInputDirection.x !==0) break
             inputDirection = {x:1, y:0}
             break
@@ -23,5 +23,6 @@ window.addEventListener('keydown', e => {
 })
 
 export function getInputDirection() {
+    lastInputDirection = inputDirection
     return inputDirection
 } 
