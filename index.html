@@ -11,10 +11,16 @@
             height: 100vh;
             width: 100vw;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items:center;
             margin-top: 80px;
             background-color: black;
+        }
+
+        h1 {
+            color: rgb(179, 177, 177);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         #game-board {
@@ -40,6 +46,7 @@
     <script src="game.js" defer type="module"></script>
 </head>
 <body>
+    <h1>Let's Play</h1>
     <div id="game-board"></div>   
 </body>
 </html>
